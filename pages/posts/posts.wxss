@@ -1,0 +1,17 @@
+/* posts.wxss */
+@import "posts_item/posts_template.wxss";
+@import "posts_swiper/posts_swiper.wxss";
+
+/*posts总体设置*/
+
+page {
+  background-color: #b7b2b9;
+}
+
+.clearHuancun {
+  width: 70rpx;
+  height: 70rpx;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}

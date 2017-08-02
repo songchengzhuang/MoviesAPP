@@ -1,0 +1,205 @@
+/* pages/movies/movieDetail/movieDetail.wxss */
+@import "../movieStar/movieStar.wxss";
+
+/*海报  */
+
+.haibaoImg {
+    width: 750rpx;
+    height: 1202rpx;
+    position: absolute;
+    z-index: 99;
+}
+
+.haibaoImg image {
+    width: 100%;
+    height: 100%;
+}
+
+/*视频播放  */
+
+.movieVideo {
+    width: 750rpx;
+    height: 430rpx;
+}
+
+.movieVideo video {
+    width: 100%;
+    height: 100%;
+}
+
+/*第一部分  */
+
+.movieDet01 {
+    width: 750rpx;
+    height: 400rpx;
+    position: relative;
+}
+
+.movieDet01 .movieCover {
+    width: 210rpx;
+    height: 300rpx;
+    position: absolute;
+    top: 200rpx;
+    right: 40rpx;
+    z-index: 9;
+}
+
+.movieDet01 image:nth-child(2) {
+    width: 100%;
+    height: 100%;
+    filter: blur(30rpx);
+    /*模糊效果  */
+}
+
+.movieDet01 .movieTxt01 {
+    font-size: 40rpx;
+    font-weight: 600;
+    color: #fff;
+    position: absolute;
+    top: 50rpx;
+    left: 35rpx;
+    letter-spacing: 6rpx;
+}
+
+.movieDet01 .movieTxt02 {
+    font-size: 34rpx;
+    font-weight: 500;
+    color: #fff;
+    position: absolute;
+    top: 160rpx;
+    left: 35rpx;
+}
+
+.movieDet01 .movieText {
+    position: absolute;
+    top: 300rpx;
+    left: 35rpx;
+}
+
+.movieDet01 .movieText text {
+    font-size: 25rpx;
+    font-weight: 600;
+    color: #ff4d4d;
+    margin-right: 12rpx;
+}
+
+.movieDet01 .movieText text:nth-child(2),
+.movieDet01 .movieText text:nth-child(4) {
+    margin-right: 40rpx;
+    color: #666;
+}
+
+/*第二部分  */
+
+.movieDet02 {
+    width: 750rpx;
+    border-bottom: 1px solid #ccc;
+}
+
+.movieDet02 text {
+    font-size: 28rpx;
+    font-weight: 600;
+}
+
+.movieDet02 .txtColor01 {
+    color: #999;
+    margin-right: 35rpx;
+}
+
+.movieDet02 .txtColor02 {
+    color: #666;
+}
+
+.movieDet02 .txtLength {
+    color: #666;
+    width: 80%;
+}
+
+.movieDet02 .movieName {
+    font-size: 30rpx;
+    color: #333;
+    margin: 40rpx 0 0 35rpx;
+    letter-spacing: 2rpx;
+}
+
+.movieDet02 .movieTxt01, .movieDet02 .movieTxt02, .movieDet02 .movieTxt03,
+.movieDet02 .movieTxt04 {
+    display: flex;
+    flex-direction: row;
+    margin: 30rpx 0 0 35rpx;
+}
+
+.movieDet02 .movieTxt02 {
+    margin: 30rpx 0 0 35rpx;
+}
+
+.movieDet02 .movieTxt03 {
+    margin: 30rpx 0 0 35rpx;
+}
+
+.movieDet02 .movieTxt04 {
+    margin: 30rpx 0 40rpx 35rpx;
+}
+
+/*第三部分  */
+
+.movieDet03 {
+    width: 750rpx;
+    border-bottom: 1px solid #ccc;
+}
+
+.movieDet03 .movieDramaTit {
+    font-size: 30rpx;
+    font-weight: 600;
+    color: #999;
+    margin: 30rpx 0 30rpx 35rpx;
+    letter-spacing: 2rpx;
+}
+
+.movieDet03 .movieDrama {
+    font-size: 30rpx;
+    font-weight: 400;
+    color: #666;
+    line-height: 50rpx;
+    text-indent: 2em;
+    margin: 0 30rpx 30rpx 35rpx;
+}
+
+/*第四部分  */
+
+.movieDet04 {
+    width: 750rpx;
+}
+
+.movieDet04 .moviePeople {
+    font-size: 30rpx;
+    font-weight: 600;
+    color: #999;
+    margin: 40rpx 0 0 35rpx;
+    letter-spacing: 2rpx;
+}
+
+.movieDet04 .peopleImg {
+    width: 100%;
+    margin-top: 40rpx;
+    white-space: nowrap;
+}
+
+.movieDet04 .movieTxt {
+    display: flex;
+    flex-direction: row;
+    margin: 30rpx 35rpx 0 35rpx;
+}
+
+.movieDet04 .movieTxt text {
+    font-size: 28rpx;
+    font-weight: 600;
+    color: #999;
+}
+
+.movieDet04 .peopleImg image {
+    width: 200rpx;
+    height: 300rpx;
+    margin: 0 25rpx 50rpx 25rpx;
+    box-shadow: 0 10rpx 8rpx #666;
+}

@@ -1,0 +1,25 @@
+/* movieStar.wxss */
+
+.movieStar {
+    display: flex;
+    flex-direction: row;
+}
+
+.movieStar>.movie_star {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 17rpx;
+    margin-right: 24rpx;
+    margin-top: 6rpx;
+}
+
+.movieStar>.movie_star image {
+    width: 17rpx;
+    height: 17rpx;
+    margin-right: 3rpx;
+}
+
+.starPingfen {
+    color: "#003366";
+}

@@ -1,0 +1,93 @@
+/* pages/posts/posts_detail/posts_detail.wxss */
+
+.detail_wrap {
+  position: relative;
+}
+
+.detail_img {
+  width: 750rpx;
+  height: 500rpx;
+}
+
+.music_icon {
+  width: 100rpx;
+  height: 100rpx;
+  position: absolute;
+  left: 50%;
+  top: 250rpx;
+  margin: -50rpx;
+  border-radius: 6px;
+  box-shadow: 7px 7px 3px black;
+  opacity: 0.5;
+}
+
+.music_icon:hover {
+  box-shadow: 3px 3px 3px black;
+}
+
+.detail_head>image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin: 5px 25rpx;
+  vertical-align: middle;
+}
+
+.detail_head>text:nth-child(2) {
+  font-size: 30rpx;
+  font-weight: 600;
+}
+
+.detail_head>text:nth-child(3) {
+  font-size: 25rpx;
+  color: #333;
+  position: absolute;
+  right: 25rpx;
+  margin: 0 15rpx;
+  line-height: 80rpx;
+}
+
+.detail_title {
+  font-size: 36rpx;
+  font-weight: 600;
+  margin: 20rpx 25rpx;
+}
+
+.detail_btn {
+  width: 100%;
+  height: 70rpx;
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+  margin: 10px 15rpx;
+  position: relative;
+}
+
+.detail_btn>view:nth-child(1) {
+  width: 90%;
+  height: 2rpx;
+  background-color: #ccc;
+  vertical-align: middle;
+  position: absolute;
+  margin: 35rpx auto;
+  z-index: -10;
+}
+
+.detail_btn .detail_icon {
+  position: absolute;
+  right: 10px;
+}
+
+.detail_btn .detail_icon>image {
+  width: 70rpx;
+  height: 70rpx;
+  margin: 0 20rpx;
+}
+
+.detail_txt {
+  font-size: 29rpx;
+  letter-spacing: 3rpx;
+  margin: 6px 20rpx;
+  text-indent: 2em;
+  line-height: 2em;
+}

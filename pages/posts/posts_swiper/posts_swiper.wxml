@@ -1,0 +1,11 @@
+<!--posts_swiper.wxml-->
+<template name="posts_swiper">
+  <!--幻灯片--vertical竖立播放-->
+  <swiper catchtap="onSwiperTop" class="swiper_wx" indicator-dots autoplay interval="3000">
+    <block wx:for="{{posts_swiper_img}}" wx:key="key">
+      <swiper-item>
+        <image src="{{item.img_src}}" class="swiper_wxit" data-detail-id="{{index}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</template>

@@ -1,0 +1,9 @@
+<import src="/pages/movies/movieItem/movieItem.wxml" />
+
+<template name="movieItems">
+    <view class="movie_item">
+        <block wx:for="{{newMovies}}" wx:key="key">
+            <template is="movieItem" data="{{...item}}" />
+        </block>
+    </view>
+</template>

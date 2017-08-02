@@ -1,0 +1,6 @@
+<!--pages/movies/moreMovies/moreMovies.wxml-->
+<import src="/pages/movies/movieItems/movieItems.wxml" />
+
+<view class="moreMovies">
+    <template is="movieItems" data='{{newMovies}}' />
+</view>

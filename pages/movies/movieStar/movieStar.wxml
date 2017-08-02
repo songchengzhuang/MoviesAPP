@@ -1,0 +1,13 @@
+<!--movieStar.wxml-->
+<template name="movieStar">
+    <view class="movieStar">
+        <view class="movie_star">
+        <!--通过循环来判断星星的图案  -->
+        <block wx:for="{{[0,1.5,2.5,3.5,4]}}" wx:key="key">
+            <image src="{{(pingfen/2)>item?'/images/movie_icon/star.png':'/images/movie_icon/none-star.png'}}"></image>
+        </block>
+        </view>
+        
+        <text class="starPingfen">{{pingfen}}</text>
+    </view>
+</template>

@@ -1,0 +1,7 @@
+<view class="container">
+    <image class="user_touxiang" src="/images/head_img.gif"></image>
+    <text class="user_name">Hello，宋</text>
+    <view class="moto_wrap" bindtap="onTap">
+        <text class="moto">开启电影app之旅</text>
+    </view>
+</view>

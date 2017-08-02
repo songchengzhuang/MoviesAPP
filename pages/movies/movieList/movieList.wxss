@@ -1,0 +1,29 @@
+/* movieList.wxss */
+@import "/pages/movies/movieItems/movieItems.wxss";
+
+.movie_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24rpx;
+}
+
+.movie_title text, .movieList>.gengduo text {
+    font-weight: 600;
+    font-size: 32rpx;
+}
+
+.movie_title>.gengduo text {
+    color: #036;
+}
+
+.movie_title>.gengduo image {
+    width: 20rpx;
+    height: 20rpx;
+    margin-left: 2rpx;
+}
+
+.movieList {
+    margin-bottom: 50rpx;
+    background-color: #fff;
+}

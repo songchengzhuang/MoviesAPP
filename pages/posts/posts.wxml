@@ -1,0 +1,20 @@
+<!--posts.wxml-->
+<import src="posts_item/posts_template.wxml" />
+<import src="posts_swiper/posts_swiper.wxml" />
+
+<view>
+    <!--swiper模板-->
+    <template is="posts_swiper" data="{{posts_swiper_img}}" />
+
+    <!--主体部分-->
+    <block wx:for="{{posts_list}}" wx:key="key">
+        <!--template 模板-->
+        <view catchtap="onDetailTap" data-detail-id="{{index}}">
+            <!--用data传值可以用","隔开-->
+            <template is="posts_item_template" data="{{...item , index , txtDetailNum}}" />
+        </view>
+    </block>
+
+    <image class="clearHuancun" src="/images/huancun_icon.png" catchtap="clearHuancun"></image>
+
+</view>

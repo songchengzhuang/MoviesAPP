@@ -1,0 +1,20 @@
+<!--post_template-->
+<template name="posts_item_template">
+  <view class="posts_wrap">
+    <view class="body_head">
+      <image src="{{post_head}}"></image>
+      <text>{{post_date}}</text>
+    </view>
+    <view class="body_img">
+      <text>{{post_title}}</text>
+      <image src="{{post_img}}"></image>
+      <text>{{post_txt}}</text>
+    </view>
+    <view class="icon_img">
+      <image src="{{post_icon01}}"></image>
+      <text>{{post_icon01_txt}}</text>
+      <image src="{{post_icon02}}"></image>
+      <text>{{txtDetailNum[index]}}</text>
+    </view>
+  </view>
+</template>

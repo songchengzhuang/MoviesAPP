@@ -1,0 +1,41 @@
+page {
+    width: 100%;
+    height: 100%;
+    background-color: #b3d4db;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #b3d4db;
+}
+
+.user_touxiang {
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 50%;
+    margin-top: 160rpx;
+    border: 1px solid black;
+}
+
+.user_name {
+    font-size: 32rpx;
+    font-weight: bold;
+    margin-top: 150rpx;
+}
+
+.moto_wrap {
+    width: 200rpx;
+    height: 80rpx;
+    border: 1px solid #405f80;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 80rpx;
+    margin-top: 200rpx;
+    color: #405f80;
+}
+
+.moto {
+    font-size: 22rpx;
+}

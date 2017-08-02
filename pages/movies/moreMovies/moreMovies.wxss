@@ -1,0 +1,6 @@
+/* pages/movies/moreMovies/moreMovies.wxss */
+@import "/pages/movies/movieItems/movieItems.wxss";
+
+.moreMovies {
+    height: 1300rpx;
+}

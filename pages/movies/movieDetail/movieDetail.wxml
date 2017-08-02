@@ -1,0 +1,63 @@
+<!--pages/movies/movieDetail/wxml-->
+<import src="/pages/movies/movieStar/movieStar.wxml" />
+
+<!--显示海报  -->
+<view class="haibaoImg" wx:if="{{hideImg}}">
+    <image src="{{movieImg}}"></image>
+</view>
+
+<view class="movieDetail" wx:if="{{!hideImg}}">
+    <!--视频播放  -->
+    <view class="movieVideo" wx:if="{{movieShow}}">
+        <video id="myVideo" src="http://www.runoob.com/try/demo_source/mov_bbb.mp4" enable-danmu controls></video>
+    </view>
+    <!--头部详情  -->
+    <view class="movieDet01">
+        <image class="movieCover" src="{{movieImg}}" bindtap="showMovie"></image>
+        <image src="{{movieImg}}"></image>
+        <text class="movieTxt01">{{movieName}}</text>
+        <text class="movieTxt02">{{moviePlace}}·{{movieTime}}</text>
+        <view class="movieText">
+            <text class="movieTxtred">{{peopleLike}}</text>
+            <text>人喜欢</text>
+            <text class="movieTxtred">{{peopleComment}}</text>
+            <text>条评论</text>
+        </view>
+    </view>
+    <!--电影介绍  -->
+    <view class="movieDet02">
+        <text class="movieName">{{originalName}}</text>
+        <view class="movieTxt01">
+            <text class="txtColor01">评分</text>
+            <template is="movieStar" data="{{pingfen}}" />
+            <text class="txtColor02">{{movieStars}}</text>
+        </view>
+        <view class="movieTxt02">
+            <text class="txtColor01">导演</text>
+            <text class="txtColor02 txtLength">{{movieDirector}}</text>
+        </view>
+        <view class="movieTxt03">
+            <text class="txtColor01">影人</text>
+            <text class="txtColor02 txtLength">{{movieStar}}</text>
+        </view>
+        <view class="movieTxt04">
+            <text class="txtColor01">类型</text>
+            <text class="txtColor02 txtLength">{{movieKind}}</text>
+        </view>
+    </view>
+    <!--剧情介绍  -->
+    <view class="movieDet03">
+        <text class="movieDramaTit">剧情简介</text>
+        <text class="movieDrama">{{movieTxt}}</text>
+    </view>
+    <!--影人剧照  -->
+    <view class="movieDet04 ">
+        <text class="moviePeople">影人剧照</text>
+        <view class="movieTxt">
+            <text class="txtColor02 txtLength">影人：{{movieStar}}</text>
+        </view>
+        <scroll-view class="peopleImg" scroll-x>
+            <image wx:for="{{starImg}}" wx:key="key" src="{{item}}"></image>
+        </scroll-view>
+    </view>
+</view>

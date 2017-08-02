@@ -1,0 +1,16 @@
+<!--movieList.wxml-->
+<import src="/pages/movies/movieItems/movieItems.wxml" />
+
+<template name="movieList">
+    <view class="movieList">
+        <view class="movie_title">
+            <text>{{head}}</text>
+            <view class="gengduo" catchtap="onMoreM" data-more-mov="{{head}}">
+                <text>更多</text>
+                <image src="/images/movie_icon/arrow-right.png"></image>
+            </view>
+        </view>
+        
+        <template is="movieItems" data="{{newMovies}}" />
+    </view>
+</template>

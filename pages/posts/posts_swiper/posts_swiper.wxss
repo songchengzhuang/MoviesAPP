@@ -1,0 +1,5 @@
+/* posts_swiper.wxss */
+.swiper_wx, .swiper_wxit {
+  width: 100%;
+  height: 450rpx;
+}

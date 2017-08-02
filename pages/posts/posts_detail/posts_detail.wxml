@@ -1,0 +1,34 @@
+<!--pages/posts/posts_detail/posts_detail.wxml-->
+<block wx:for="{{local_detail_data}}" wx:key="key" wx:if="{{index==detailId}}">
+  <view class="detail_wrap">
+    <!--图片介绍-->
+    <image class="detail_img" src="{{isMusicBtn? item.detail_music.coverImgUrl:item.detail_img}}"></image>
+    <!-- 音乐图标 这里比较wx:if/wx:else 和 三元表达式 的不同-->
+    <image catchtap="onMusicBtn" class="music_icon" src="{{isMusicBtn? item.music_stop:item.music_icon}}"></image>
+
+    <!--作者信息-->
+    <view class="detail_head">
+      <image src="{{item.detail_head_img}}"></image>
+      <text>{{item.detail_head_txt01}}</text>
+      <text>{{item.detail_head_txt02}}</text>
+    </view>
+
+    <!--题目-->
+    <text class="detail_title">{{item.detail_title}}</text>
+    <view class="detail_btn">
+      <view></view>
+
+      <view class="detail_icon">
+        <image wx:if="{{qizhiBtn}}" catchtap="onShoucangBtn" src="{{item.detail_icon01}}"></image>
+        <image wx:else catchtap="onShoucangBtn" src="{{item.detail_icon02}}"></image>
+        <image catchtap="onSheetBtn" src="{{item.detail_icon03}}"></image>
+      </view>
+    </view>
+
+    <!--文字介绍-->
+    <text class="detail_txt">{{item.detail_txt01}}</text>
+    <text class="detail_txt">{{item.detail_txt02}}</text>
+
+  </view>
+
+</block>

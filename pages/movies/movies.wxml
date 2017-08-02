@@ -1,0 +1,22 @@
+<!--movies.wxml-->
+<import src="/pages/movies/movieList/movieList.wxml" />
+<import src="/pages/movies/movieItems/movieItems.wxml" />
+
+<view class="moviesView">
+    <view class="searchInput">
+        <icon type="search" class="searchIcon" size="14" color="#3333ff" />
+        <input type="text" maxlength="12" placeholder="大圣归来，绣春刀2 ……" placeholder-class="placeholder" bindfocus="onBindfocus" bindchange="onBindchang" />
+        <icon type="clear" class="searchIcon" size="14" color="#3333ff" bindtap="hideSearchView" wx:if="{{searchShow}}" />
+    </view>
+    <!-- <block wx:for="{{moviesList}}" wx:for-item="movies" wx:key="key"> -->
+    <view wx:if="{{bodyShow}}">
+        <template is="movieList" data="{{...in_theaters}}" />
+        <template is="movieList" data="{{...coming_soon}}" />
+        <template is="movieList" data="{{...top250}}" />
+    </view>
+    <!-- </block> -->
+</view>
+<!--搜索页面  -->
+<view class="searchView" wx:if="{{searchShow}}">
+    <template is="movieItems" data="{{...searchMov}}" />
+</view>

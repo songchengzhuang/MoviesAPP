@@ -1,0 +1,35 @@
+/* movies.wxss */
+@import "movieList/movieList.wxss";
+@import "/pages/movies/movieItems/movieItems.wxss";
+
+page {
+    background-color: #fff;
+}
+
+.moviesView {
+    background-color: #b7b2b9;
+}
+
+.searchInput {
+    width: 100%;
+    height: 80rpx;
+    display: flex;
+    flex-direction: row;
+    background-color: #f2f2f2;
+}
+
+.searchIcon {
+    float: left;
+    margin: auto 20rpx auto 20rpx;
+}
+
+.placeholder {
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+.searchInput input {
+    width: 600rpx;
+    height: 100%;
+    font-size: 28rpx;
+}

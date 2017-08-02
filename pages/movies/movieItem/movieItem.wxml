@@ -1,0 +1,10 @@
+<!--movieItem.wxml-->
+<import src="/pages/movies/movieStar/movieStar.wxml" />
+
+<template name="movieItem">
+    <view class="movieItem">
+        <image src="{{imageUrl}}" catchtap="onMovieDetail" data-movie-id="{{movieId}}"></image>
+        <text>{{title}}</text>
+        <template is="movieStar" data="{{pingfen}}"/>
+    </view>
+</template>

@@ -1,0 +1,74 @@
+/* post_template.wxss */
+
+.posts_wrap {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  /*align-items: center;*/
+}
+
+.body_head, .body_img, .icon_img {
+  padding: 0 0 10px;
+  background-color: #fff;
+}
+
+/*body头部设置*/
+
+.body_head {
+  padding-top: 10px;
+}
+
+.body_head>image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin: 0 15rpx;
+  vertical-align: middle;
+}
+
+.body_head>text {
+  font-size: 30rpx;
+  color: #333;
+  position: absolute;
+  right: 20rpx;
+  line-height: 80rpx;
+}
+
+/*body中间内容*/
+
+.body_img>text:nth-child(1) {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin: 0 15rpx;
+}
+
+.body_img>image {
+  width: 750rpx;
+  height: 400rpx;
+  margin-top: 10px;
+}
+
+/**/
+
+.body_img>text:nth-child(3) {
+  display: inline-block;
+  margin: 10px;
+  font-size: 27rpx;
+  letter-spacing: 3rpx;
+  text-indent: 2em;
+  line-height: 2em;
+}
+
+/*body尾部*/
+
+.icon_img>image {
+  width: 35rpx;
+  height: 35rpx;
+  margin: 10rpx 15rpx 10rpx;
+  vertical-align: middle;
+}
+
+.icon_img>text {
+  font-size: 25rpx;
+  margin-right: 25rpx;
+}
