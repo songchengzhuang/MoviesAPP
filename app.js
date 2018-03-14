@@ -3,7 +3,7 @@ App({
     globalData: {
         g_isMusicBtn: false,
         g_isMusicId: -1,
-        movieBase: "https://api.douban.com"
+        movieBase: "https://douban.uieee.com"
     },
 
     /**
